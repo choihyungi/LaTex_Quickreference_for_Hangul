@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+%  _____           
+% |_   _|_ _ _   _ 
+%   | |/ _` | | | |
+%   | | (_| | |_| |
+%   |_|\__,_|\__,_|
+%
+% LaTeX2e Template
+% Version 2.6.0 (21/04/2026)
+%
+% Author: 
+% Guillermo Jimenez (memo.notess1@gmail.com)
+% 
+% License:
+% Creative Commons CC BY 4.0
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% Github Repository:
+% https://github.com/MemoJimenez/Tau-class
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[9pt,a4paper,twocolumn,twoside]{tau-class/tau}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{kotex}
+\ifdefined\setmainhangulfont
+\setmainhangulfont{Noto Serif CJK KR}[BoldFont = Noto Serif CJK KR Bold]
+\fi
+\usepackage{biblatex}
+\usepackage{hyperref}   % makes references clickable
+\usepackage{cleveref}   % load AFTER hyperref
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{float}
+
+
+\newcommand{\dotlink}{\mathrel{\bullet\joinrel\relbar\joinrel\bullet}}
+
+% Spanish babel recommendation
+% \usepackage[spanish,es-nodecimaldot,es-noindentfirst]{babel} 
+
+%----------------------------------------------------------
+% Title & Authors/Affiliations
+%----------------------------------------------------------
+
+\doctype{Manual}
+\title{Basics of Hangul the Korean Writing System: \\ A Guide for Beginners}
+
+%----------------------------------------------------------
+
+\author[a,1]{Hyungi Choi\thanks{\href{mailto:choihyungi92@gmail.com}{choihyungi92@gmail.com}}}
+
+
+%----------------------------------------------------------
+% Document-, Footer- information
+%----------------------------------------------------------
+
+\dates{This manuscript was compiled on \today}
+
+\docinfo{} 
+
+%----------------------------------------------------------
+
+\footinfo{personal Miniproject}
+\theday{\today}
+\organization{Vienna University of Technology, Austria}
+\leadauthor{Hyungi Choi}
+
+%----------------------------------------------------------
+% Abstract and Keywords
+%----------------------------------------------------------
+
+\begin{abstract}    
+    This document serves as a comprehensive guide for beginners to learn the basics of Hangul, the Korean writing system. It covers the fundamental principles of Hangul, mainly its structure, and pronunciation. The guide is designed to provide learners with a solid foundation in reading and writing Hangul.
+\end{abstract}
+
+%----------------------------------------------------------
+
+%\keywords{tau-class, research article, lab report, academic writing}
+
+%----------------------------------------------------------
+\begin{document}
+
+    \maketitle
+    \thispagestyle{firststyle}
+    \tableofcontents
+
+\section{Introduction}
+    Contrary to a common misconception, Hangul is not a logographic writing system like Chinese characters. Instead, it is a featural alphabet consisting of 14 basic consonants and 10 basic vowels written in blocks to represent the syllables of the Korean language. It was created in 1443 by King Sejong the Great and his scholars with the purpose of promoting literacy among the common people, therefore it is characterized by its simplicity and ease of learning~\cite{hunminjeongeum}. 
+
+\section{Principles}
+    It is crucial to understand the basic principles of Hangul before diving into its structure and pronunciation. The Korean writing system is based on a specific arrangement of consonants and vowels, that result in 2-dimensional blocks representing syllables, which are then written linearly to form words. This unusual arrangement of letters is probably the most challenging aspect of learning Hangul.
+    
+    The consonants are designed to represent the shape of the speech organs used to produce them, while the vowels are designed to represent the philosophical concepts of the universe at the time of its creation~\cite{hunminjeongeum}. While the visual appeal of combining letters into single syllabic blocks may vary from person to person, it cannot be denied that the clear visual distinction between consonants and vowels is a welcome sign for any reader.
+
+\input{sections/structure.tex}
+\input{sections/consonants.tex}
+\input{sections/vocals.tex}
+\input{sections/examples.tex}
+\input{sections/exercises.tex}
+
+\nocite{*}
+\printbibliography
+\end{document}

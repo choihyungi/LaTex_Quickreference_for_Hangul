@@ -1,0 +1,192 @@
+\section{Consonants}
+    As mentioned before the consonants are designed to represent the shape of the speech organs used to produce them~\cite{hunminjeongeum}. Therefore the consonants are divided roughly into four groups (tongue, teeth, throat, and lips). Which have been further divided into subgroups based on the place of articulation, basically where the organs are placed when pronouncing the consonants. The following list shows the basic consonants and their corresponding English letter.
+
+    For convenience I will use the following notation to represent the consonants in this document (please use \cref{fig:block} and \cref{eq:syllable_structure} as reference):
+
+    \begin{equation}
+        \begin{pmatrix}
+            \text{hangul letter} \\
+            \text{pronunciation$_{\text{reference word}}$ as $\mathrm{c}_1$}\\
+            \text{pronunciation$_{\text{reference word}}$ as $\mathrm{c}_2$ or $\mathrm{c}_3$}\\
+            \text{special cases }
+        \end{pmatrix}
+    \end{equation}
+
+    The pronunciations given here are simplified for beginners, based on the official standard pronunciation rules~\cite{pronunciation_standard}.
+
+    Note that the pronunciations are written phonetically, as an English speaker would read them, rather than in the official Revised Romanization of Korean (e.g. ㅡ is written as “eww” instead of “eu”).
+
+    Onomatopoeia and interjection words will be marked with '' when used as reference words.
+
+    \subsection{Tongue, velar}
+        Back of tongue against the soft palate; ㄱ shows the tongue root.
+
+        \begin{equation}
+            \begin{pmatrix}
+                \text{ㄱ}\\ 
+                \mathrm{g}_\mathrm{\textbf{g}o}\\ 
+                \mathrm{g}_\mathrm{\textbf{g}o}\\ 
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅋ} \\ 
+                \mathrm{k}_\mathrm{\textbf{k}ite}\\ 
+                \mathrm{g}_\mathrm{\textbf{g}o}\\ 
+                -
+            \end{pmatrix}
+            \dotlink
+             \begin{pmatrix}
+                \text{ㄲ} \\
+                \mathrm{gg}_\mathrm{''\textbf{G}ulp!''}\\
+                \mathrm{g}_\mathrm{\textbf{g}o}\\
+                -
+            \end{pmatrix}
+        \end{equation}
+       
+    
+    \subsection{Tongue, alveolar}
+        Tongue tip touches the ridge behind the upper teeth; ㄴ shows the tongue.
+
+        \begin{equation}
+            \begin{pmatrix}
+                \text{ㄴ}\\
+                \mathrm{n}_\mathrm{\textbf{n}o}\\
+                \mathrm{n}_\mathrm{\textbf{n}o}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㄷ}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅌ}\\
+                \mathrm{t}_\mathrm{\textbf{t}op}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㄸ}\\
+                \mathrm{dd}_\mathrm{''\textbf{D}ing!''}\\
+                -\\
+                -
+            \end{pmatrix}
+        \end{equation}
+        \begin{equation}
+            \begin{pmatrix}
+                \text{ㄹ}\\
+                \mathrm{r}_\mathrm{Ma\textbf{r}ia}\\
+                \mathrm{l}_\mathrm{ba\textbf{ll}}\\
+                \mathrm{c}_{o,last}^{\text{prev block}} = \text{ㄹ}\ \Rightarrow\ \mathrm{c}_1 = \mathrm{l}_\mathrm{ba\textbf{ll}}
+            \end{pmatrix} \label{eq:rieut}
+        \end{equation}
+
+        ㄹ \cref{eq:rieut}: "If the previous block ends in ㄹ, an initial ㄹ is also read as l (빨리 → ppalli)."
+
+    
+    \subsection{Lips, bilabial}
+        Lips pressed together; ㅁ shows the mouth.
+
+        \begin{equation}
+            \begin{pmatrix}
+                \text{ㅁ}\\
+                \mathrm{m}_\mathrm{\textbf{m}oon}\\
+                \mathrm{m}_\mathrm{\textbf{m}oon}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅂ}\\
+                \mathrm{b}_\mathrm{\textbf{b}oy}\\
+                \mathrm{b}_\mathrm{\textbf{b}oy}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅍ}\\
+                \mathrm{p}_\mathrm{\textbf{p}ie}\\
+                \mathrm{b}_\mathrm{\textbf{b}oy}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅃ}\\
+                \mathrm{bb}_\mathrm{''\textbf{B}ang!''}\\
+                -\\
+                -
+            \end{pmatrix}
+        \end{equation}
+    
+    \subsection{Teeth, sibilant}
+        Air hisses past the teeth; ㅅ shows the gap between teeth.
+
+       \begin{equation}
+            \begin{pmatrix}
+                \text{ㅅ}\\
+                \mathrm{s}_\mathrm{\textbf{s}un}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                \binom{\mathrm{c}_1 = \text{ㅅ}} {\mathrm{v}_t = \text{ㅣ}} \Rightarrow\ \mathrm{c}_1 = \mathrm{sh}_\mathrm{\textbf{sh}e}\\
+                \binom{\mathrm{c}_3 = \text{ㅅ}} {\mathrm{c}_1^{\text{next block}} = \text{ㅇ}} \Rightarrow\ \mathrm{c}_3 = \mathrm{s}_\mathrm{\textbf{s}un}\\
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅈ}\\
+                \mathrm{j}_\mathrm{\textbf{j}am}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅊ}\\
+                \mathrm{ch}_\mathrm{\textbf{ch}ild}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                -
+            \end{pmatrix}
+            \label{eq:shieut}
+        \end{equation}
+        \begin{equation}
+            \begin{pmatrix}
+                \text{ㅆ}\\
+                \mathrm{ss}_\mathrm{\textbf{s}ea}\\
+                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅉ}\\
+                \mathrm{jj}_\mathrm{Gu\textbf{cc}i}\\
+                -\\
+                -
+            \end{pmatrix}    
+       \end{equation}
+       ㅅ \cref{eq:shieut}: “Before ㅣ, ㅅ is read as sh (시 → shi).”
+       \\
+       ㅅ \cref{eq:shieut}: “If the next block starts with ㅇ, ㅅ is read as s (있어 → ids-uh).”
+    
+    \subsection{Throat, glottal}
+       Sound from the throat; ㅇ shows the open throat
+
+       \begin{equation}
+            \begin{pmatrix}
+                \text{ㅇ}\\
+                \mathrm{\varnothing}\\
+                \mathrm{ng}_\mathrm{si\textbf{ng}}\\
+                -
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \text{ㅎ}\\
+                \mathrm{h}_\mathrm{\textbf{h}at}\\
+                \mathrm{\varnothing}\\
+                -
+            \end{pmatrix}
+            \label{eq:ieung}
+       \end{equation}
+
+       $\varnothing$ \cref{eq:ieung} means silent
+ 
