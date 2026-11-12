@@ -27,7 +27,7 @@
 \usepackage[english]{babel}
 \usepackage{kotex}
 \ifdefined\setmainhangulfont
-\setmainhangulfont{Noto Serif CJK KR}[BoldFont = Noto Serif CJK KR Bold]
+    \setmainhangulfont{Noto Serif CJK KR}[BoldFont = Noto Serif CJK KR Bold]
 \fi
 \usepackage{biblatex}
 \usepackage{hyperref}   % makes references clickable
@@ -36,8 +36,8 @@
 \usepackage{tikz}
 \usepackage{float}
 
-
 \newcommand{\dotlink}{\mathrel{\bullet\joinrel\relbar\joinrel\bullet}}
+\newcommand{\idx}[2]{#1\,{\scriptsize\eqref{#2}}}
 
 % Spanish babel recommendation
 % \usepackage[spanish,es-nodecimaldot,es-noindentfirst]{babel} 
@@ -46,8 +46,8 @@
 % Title & Authors/Affiliations
 %----------------------------------------------------------
 
-\doctype{Manual}
-\title{Basics of Hangul the Korean Writing System: \\ A Guide for Beginners}
+\doctype{Quick Reference}
+\title{Reading Hangul Block by Block:\\ A Quick Reference}
 
 %----------------------------------------------------------
 
@@ -74,7 +74,7 @@
 %----------------------------------------------------------
 
 \begin{abstract}    
-    This document serves as a comprehensive guide for beginners to learn the basics of Hangul, the Korean writing system. It covers the fundamental principles of Hangul, mainly its structure, and pronunciation. The guide is designed to provide learners with a solid foundation in reading and writing Hangul.
+    A beginner’s guide to reading Hangul, the Korean writing system, covering the structure of syllable blocks and the pronunciation of all consonants and vowels.
 \end{abstract}
 
 %----------------------------------------------------------
@@ -89,19 +89,43 @@
     \tableofcontents
 
 \section{Introduction}
-    Contrary to a common misconception, Hangul is not a logographic writing system like Chinese characters. Instead, it is a featural alphabet consisting of 14 basic consonants and 10 basic vowels written in blocks to represent the syllables of the Korean language. It was created in 1443 by King Sejong the Great and his scholars with the purpose of promoting literacy among the common people, therefore it is characterized by its simplicity and ease of learning~\cite{hunminjeongeum}. 
-
-\section{Principles}
-    It is crucial to understand the basic principles of Hangul before diving into its structure and pronunciation. The Korean writing system is based on a specific arrangement of consonants and vowels, that result in 2-dimensional blocks representing syllables, which are then written linearly to form words. This unusual arrangement of letters is probably the most challenging aspect of learning Hangul.
-    
-    The consonants are designed to represent the shape of the speech organs used to produce them, while the vowels are designed to represent the philosophical concepts of the universe at the time of its creation~\cite{hunminjeongeum}. While the visual appeal of combining letters into single syllabic blocks may vary from person to person, it cannot be denied that the clear visual distinction between consonants and vowels is a welcome sign for any reader.
-
+    Hangul is not a logographic script like Chinese characters, but an alphabet of 14 basic consonants and 10 basic vowels, created in 1443 by King Sejong the Great to make literacy accessible to everyone~\cite{hunminjeongeum}. The consonants mimic the shape of the speech organs that produce them, and the vowels are built from three symbols representing heaven($\cdot$), earth(ㅡ), and human(ㅣ)~\cite{hunminjeongeum}. Letters are not written in a line, but grouped into blocks, one per syllable. Learning to read these blocks is the key to reading Hangul.
+\newpage
 \input{sections/structure.tex}
 \input{sections/consonants.tex}
 \input{sections/vocals.tex}
 \input{sections/examples.tex}
 \input{sections/exercises.tex}
 
-\nocite{*}
+
+
+\section*{Letter index}
+    \addcontentsline{toc}{section}{Letter index}
+    Each letter is followed by the number of the equation where it is described. Click a number to jump there.
+
+    \begin{center}
+        \textbf{Consonants}\\[2pt]
+        \begin{tabular}{*{7}{c}}
+            \idx{ㄱ}{eq:giyeok} & \idx{ㄲ}{eq:giyeok} & \idx{ㄴ}{eq:nieun} &
+            \idx{ㄷ}{eq:nieun}  & \idx{ㄸ}{eq:nieun}  & \idx{ㄹ}{eq:rieut} &
+            \idx{ㅁ}{eq:mieum} \\
+            \idx{ㅂ}{eq:mieum}  & \idx{ㅃ}{eq:mieum}  & \idx{ㅅ}{eq:shieut} &
+            \idx{ㅆ}{eq:shieut} & \idx{ㅇ}{eq:ieung}  & \idx{ㅈ}{eq:jieut} &
+            \idx{ㅉ}{eq:jieut} \\
+            \idx{ㅊ}{eq:jieut}  & \idx{ㅋ}{eq:giyeok} & \idx{ㅌ}{eq:nieun} &
+            \idx{ㅍ}{eq:mieum}  & \idx{ㅎ}{eq:ieung}  & & \\
+        \end{tabular}\\
+        \vspace{6pt}
+        \textbf{Vowels}\\[2pt]
+        \begin{tabular}{*{7}{c}}
+            \idx{ㅏ}{eq:a}  & \idx{ㅐ}{eq:ae} & \idx{ㅑ}{eq:a}  & \idx{ㅒ}{eq:ae} &
+            \idx{ㅓ}{eq:eo} & \idx{ㅔ}{eq:e}  & \idx{ㅕ}{eq:eo} \\
+            \idx{ㅖ}{eq:e}  & \idx{ㅗ}{eq:o}  & \idx{ㅘ}{eq:oe} & \idx{ㅙ}{eq:oe} &
+            \idx{ㅚ}{eq:oe} & \idx{ㅛ}{eq:o}  & \idx{ㅜ}{eq:u} \\
+            \idx{ㅝ}{eq:wi} & \idx{ㅞ}{eq:wi} & \idx{ㅟ}{eq:wi} & \idx{ㅠ}{eq:u}  &
+            \idx{ㅡ}{eq:eu} & \idx{ㅢ}{eq:ui} & \idx{ㅣ}{eq:i} \\
+        \end{tabular}
+    \end{center}
+
 \printbibliography
 \end{document}

@@ -1,47 +1,42 @@
 \section{Consonants}
-    As mentioned before the consonants are designed to represent the shape of the speech organs used to produce them~\cite{hunminjeongeum}. Therefore the consonants are divided roughly into four groups (tongue, teeth, throat, and lips). Which have been further divided into subgroups based on the place of articulation, basically where the organs are placed when pronouncing the consonants. The following list shows the basic consonants and their corresponding English letter.
-
-    For convenience I will use the following notation to represent the consonants in this document (please use \cref{fig:block} and \cref{eq:syllable_structure} as reference):
+    The consonants are grouped by the speech organ that produces them. Each consonant is shown in this notation:
 
     \begin{equation}
         \begin{pmatrix}
-            \text{hangul letter} \\
-            \text{pronunciation$_{\text{reference word}}$ as $\mathrm{c}_1$}\\
-            \text{pronunciation$_{\text{reference word}}$ as $\mathrm{c}_2$ or $\mathrm{c}_3$}\\
-            \text{special cases }
+            \multicolumn{3}{c}{\textbf{\Large hangul letter}} \\
+            \text{$\text{sound}^{\text{default}}_{\text{reference word}}$} & \text{$\text{sound}^{\text{special case Nr.}}_{\text{reference word}}(\text{trigger})$} & \text{as $\textbf{\large c}_\mathbf{1}$}\\
+            \text{$\text{sound}^{\text{default}}_{\text{reference word}}$} & \text{$\text{sound}^{\text{special case Nr.}}_{\text{reference word}}(\text{trigger})$} & \text{as $\textbf{\large c}_\mathbf{2}$}\\
+            \text{$\text{sound}^{\text{default}}_{\text{reference word}}$} & \text{$\text{sound}^{\text{special case Nr.}}_{\text{reference word}}(\text{trigger})$} & \text{as $\textbf{\large c}_\mathbf{3}$}\\
         \end{pmatrix}
     \end{equation}
-
-    The pronunciations given here are simplified for beginners, based on the official standard pronunciation rules~\cite{pronunciation_standard}.
-
-    Note that the pronunciations are written phonetically, as an English speaker would read them, rather than in the official Revised Romanization of Korean (e.g. ㅡ is written as “eww” instead of “eu”).
-
-    Onomatopoeia and interjection words will be marked with '' when used as reference words.
+   
+    Pronunciations are simplified for beginners, based on the official rules~\cite{pronunciation_standard}, and written as an English speaker would read them rather than in the official romanization (e.g. ㅡ as “eww” instead of “eu”). Onomatopoeia and interjections are marked with quotes, $\varnothing$ means silent, and numbered special cases are listed below each bracket.
 
     \subsection{Tongue, velar}
         Back of tongue against the soft palate; ㄱ shows the tongue root.
 
         \begin{equation}
             \begin{pmatrix}
-                \text{ㄱ}\\ 
+                \pmb{\text{\Large ㄱ}}\\ 
                 \mathrm{g}_\mathrm{\textbf{g}o}\\ 
-                \mathrm{g}_\mathrm{\textbf{g}o}\\ 
-                -
+                \mathrm{g}_\mathrm{\textbf{g}o}\\
+                \mathrm{g}_\mathrm{\textbf{g}o}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅋ} \\ 
+                \pmb{\text{\Large ㅋ}} \\ 
                 \mathrm{k}_\mathrm{\textbf{k}ite}\\ 
-                \mathrm{g}_\mathrm{\textbf{g}o}\\ 
-                -
+                \mathrm{g}_\mathrm{\textbf{g}o}\\
+                \mathrm{-}
             \end{pmatrix}
             \dotlink
              \begin{pmatrix}
-                \text{ㄲ} \\
+                \pmb{\text{\Large ㄲ}} \\
                 \mathrm{gg}_\mathrm{''\textbf{G}ulp!''}\\
-                \mathrm{g}_\mathrm{\textbf{g}o}\\
-                -
+                \mathrm{-}\\
+                \mathrm{-}
             \end{pmatrix}
+            \label{eq:giyeok}
         \end{equation}
        
     
@@ -50,76 +45,81 @@
 
         \begin{equation}
             \begin{pmatrix}
-                \text{ㄴ}\\
+                \pmb{\text{\Large ㄴ}}\\
                 \mathrm{n}_\mathrm{\textbf{n}o}\\
                 \mathrm{n}_\mathrm{\textbf{n}o}\\
-                -
+                \mathrm{-}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㄷ}\\
+                \pmb{\text{\Large ㄷ}}\\
                 \mathrm{d}_\mathrm{\textbf{d}o}\\
                 \mathrm{d}_\mathrm{\textbf{d}o}\\
-                -
+                \mathrm{-}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅌ}\\
+                \pmb{\text{\Large ㅌ}}\\
                 \mathrm{t}_\mathrm{\textbf{t}op}\\
                 \mathrm{d}_\mathrm{\textbf{d}o}\\
-                -
+                \mathrm{t}_\mathrm{\textbf{t}op}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㄸ}\\
+                \pmb{\text{\Large ㄸ}}\\
                 \mathrm{dd}_\mathrm{''\textbf{D}ing!''}\\
-                -\\
-                -
+                \mathrm{-}\\
+                \mathrm{-}
             \end{pmatrix}
+            \label{eq:nieun}
         \end{equation}
         \begin{equation}
             \begin{pmatrix}
-                \text{ㄹ}\\
-                \mathrm{r}_\mathrm{Ma\textbf{r}ia}\\
+                \multicolumn{2}{c}{\pmb{\text{\Large ㄹ}}}\\
+                \mathrm{r}_\mathrm{Ma\textbf{r}ia} & \mathrm{l}^{~\ref{item:rieut_special_case_1}}_\mathrm{ba\textbf{ll}}(\mathrm{c}_{end}^{\text{prev}} = \text{ㄹ})\\
                 \mathrm{l}_\mathrm{ba\textbf{ll}}\\
-                \mathrm{c}_{o,last}^{\text{prev block}} = \text{ㄹ}\ \Rightarrow\ \mathrm{c}_1 = \mathrm{l}_\mathrm{ba\textbf{ll}}
-            \end{pmatrix} \label{eq:rieut}
+                \mathrm{-}
+            \end{pmatrix}
+            \label{eq:rieut}
         \end{equation}
-
-        ㄹ \cref{eq:rieut}: "If the previous block ends in ㄹ, an initial ㄹ is also read as l (빨리 → ppalli)."
-
+        
+        ㄹ \cref{eq:rieut} special cases: 
+        \begin{enumerate}
+            \item \textbf{If previous syllable ends in} \pmb{ㄹ}, then \pmb{ㄹ} in $\textbf{c}_1$ is read as \textbf{l not r} (빨리 $\rightarrow$ bbal-\textbf{r}i $\pmb\times$, bbal-\textbf{l}i $\checkmark$ ). \label{item:rieut_special_case_1}
+        \end{enumerate}
     
     \subsection{Lips, bilabial}
         Lips pressed together; ㅁ shows the mouth.
 
         \begin{equation}
             \begin{pmatrix}
-                \text{ㅁ}\\
+                \pmb{\text{\Large ㅁ}}\\
                 \mathrm{m}_\mathrm{\textbf{m}oon}\\
                 \mathrm{m}_\mathrm{\textbf{m}oon}\\
-                -
+                \mathrm{m}_\mathrm{\textbf{m}oon}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅂ}\\
+                \pmb{\text{\Large ㅂ}}\\
                 \mathrm{b}_\mathrm{\textbf{b}oy}\\
                 \mathrm{b}_\mathrm{\textbf{b}oy}\\
-                -
+                \mathrm{b}_\mathrm{\textbf{b}oy}\\
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅍ}\\
+                \pmb{\text{\Large ㅍ}}\\
                 \mathrm{p}_\mathrm{\textbf{p}ie}\\
                 \mathrm{b}_\mathrm{\textbf{b}oy}\\
-                -
+                \mathrm{b}_\mathrm{\textbf{b}oy}
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅃ}\\
+                \pmb{\text{\Large ㅃ}}\\
                 \mathrm{bb}_\mathrm{''\textbf{B}ang!''}\\
                 -\\
                 -
             \end{pmatrix}
+            \label{eq:mieum}
         \end{equation}
     
     \subsection{Teeth, sibilant}
@@ -127,66 +127,76 @@
 
        \begin{equation}
             \begin{pmatrix}
-                \text{ㅅ}\\
-                \mathrm{s}_\mathrm{\textbf{s}un}\\
-                \mathrm{d}_\mathrm{\textbf{d}o}\\
-                \binom{\mathrm{c}_1 = \text{ㅅ}} {\mathrm{v}_t = \text{ㅣ}} \Rightarrow\ \mathrm{c}_1 = \mathrm{sh}_\mathrm{\textbf{sh}e}\\
-                \binom{\mathrm{c}_3 = \text{ㅅ}} {\mathrm{c}_1^{\text{next block}} = \text{ㅇ}} \Rightarrow\ \mathrm{c}_3 = \mathrm{s}_\mathrm{\textbf{s}un}\\
+                \multicolumn{2}{c}{\pmb{\text{\Large ㅅ}}}\\
+                \mathrm{s}_\mathrm{\textbf{s}un} & \mathrm{sh}_\mathrm{\textbf{sh}e}^{~\ref{item: shieut_special_case_1}}(\mathrm{v}_t = \text{ㅣ})\\
+                \mathrm{d}_\mathrm{\textbf{d}o} & \mathrm{s}_\mathrm{\textbf{s}un}^{~\ref{item: shieut_special_case_2}}(\mathrm{c}^{\text{next}}_1 = \text{ㅇ})\\
+                \mathrm{d}_\mathrm{\textbf{d}o} & \mathrm{s}_\mathrm{\textbf{s}un}^{~\ref{item: shieut_special_case_2}}(\mathrm{c}^{\text{next}}_1 = \text{ㅇ})\\
+                           
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅈ}\\
-                \mathrm{j}_\mathrm{\textbf{j}am}\\
-                \mathrm{d}_\mathrm{\textbf{d}o}\\
-                -
-            \end{pmatrix}
-            \dotlink
-            \begin{pmatrix}
-                \text{ㅊ}\\
-                \mathrm{ch}_\mathrm{\textbf{ch}ild}\\
-                \mathrm{d}_\mathrm{\textbf{d}o}\\
+                \pmb{\text{\Large ㅆ}}\\
+                \mathrm{ss}_\mathrm{\textbf{s}ea}\\
+                -\\
                 -
             \end{pmatrix}
             \label{eq:shieut}
         \end{equation}
+
+        ㅅ \cref{eq:shieut} special cases:
+        \begin{enumerate}
+            \item \textbf{If $\mathrm{v}_1$ is empty and $\mathrm{v}_2$ is} \pmb{ㅣ}, then \pmb{ㅅ} in $\textbf{c}_1$is read as \textbf{sh not s} (시 → \textbf{s}i \pmb{$\times$}, \textbf{sh}i $\checkmark$). \label{item: shieut_special_case_1}
+            \item \textbf{If the next syllable starts with} \pmb{ㅇ}, then any \pmb{ㅅ} in $\textbf{c}_2$ and $\textbf{c}_3$ is read as \textbf{s not d} (옷이 → o\textbf{d}-i \pmb{$\times$}, o\textbf{s}-i $\checkmark$; 있어 → id\textbf{d}-uh \pmb{$\times$}, is\textbf{s}-uh $\checkmark$). \label{item: shieut_special_case_2}
+        \end{enumerate}
+
         \begin{equation}
             \begin{pmatrix}
-                \text{ㅆ}\\
-                \mathrm{ss}_\mathrm{\textbf{s}ea}\\
+                \multicolumn{2}{c}{\pmb{\text{\Large ㅈ}}}\\
+                \mathrm{j}_\mathrm{\textbf{j}am}\\
+                \mathrm{d}_\mathrm{\textbf{d}o} &  \mathrm{j}_\mathrm{\textbf{j}am}^{~\ref{item: jieut_special_case_1}}(\mathrm{c}^{\text{next}}_1 = \text{ㅇ})\\
+                \mathrm{d}_\mathrm{\textbf{d}o} &  \mathrm{j}_\mathrm{\textbf{j}am}^{~\ref{item: jieut_special_case_1}}(\mathrm{c}^{\text{next}}_1 = \text{ㅇ})\\
+            \end{pmatrix}
+            \dotlink
+            \begin{pmatrix}
+                \pmb{\text{\Large ㅊ}}\\
+                \mathrm{ch}_\mathrm{\textbf{ch}ild}\\
                 \mathrm{d}_\mathrm{\textbf{d}o}\\
                 -
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅉ}\\
+                \pmb{\text{\Large ㅉ}}\\
                 \mathrm{jj}_\mathrm{Gu\textbf{cc}i}\\
                 -\\
                 -
-            \end{pmatrix}    
-       \end{equation}
-       ㅅ \cref{eq:shieut}: “Before ㅣ, ㅅ is read as sh (시 → shi).”
-       \\
-       ㅅ \cref{eq:shieut}: “If the next block starts with ㅇ, ㅅ is read as s (있어 → ids-uh).”
+            \end{pmatrix}
+            \label{eq:jieut}
+        \end{equation}
+        
+        ㅈ \cref{eq:jieut} special cases:
+        \begin{enumerate}
+            \item \textbf{If the next syllable starts with} \pmb{ㅇ}, then any \pmb{ㅈ} in $\textbf{c}_2$ and $\textbf{c}_3$ is read as \textbf{j not d} (맞아 → ma\textbf{d}-a \pmb{$\times$}, ma\textbf{j}-a $\checkmark$; 앉아 → an\textbf{d}-a \pmb{$\times$}, an\textbf{j}-a $\checkmark$). \label{item: jieut_special_case_1}
+        \end{enumerate}
+
+       
     
     \subsection{Throat, glottal}
        Sound from the throat; ㅇ shows the open throat
 
        \begin{equation}
             \begin{pmatrix}
-                \text{ㅇ}\\
+                \pmb{\text{\Large ㅇ}}\\
                 \mathrm{\varnothing}\\
                 \mathrm{ng}_\mathrm{si\textbf{ng}}\\
                 -
             \end{pmatrix}
             \dotlink
             \begin{pmatrix}
-                \text{ㅎ}\\
+                \pmb{\text{\Large ㅎ}}\\
                 \mathrm{h}_\mathrm{\textbf{h}at}\\
                 \mathrm{\varnothing}\\
-                -
+                \varnothing
             \end{pmatrix}
             \label{eq:ieung}
        \end{equation}
-
-       $\varnothing$ \cref{eq:ieung} means silent
  
